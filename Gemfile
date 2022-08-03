@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Mail Form gem to send email from contact form
+gem 'mail_form'
