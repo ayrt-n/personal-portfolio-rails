@@ -1,4 +1,8 @@
 <div class="form">
+  <% flash.each do |key, message| %>
+    <%= render "shared/flash_#{key}", key: key, message: message%>
+  <% end %>
+  
   <%= form_with model: @contact do |f| %>
     <div class="field">
       <%= f.label :name, class: "label" %>
