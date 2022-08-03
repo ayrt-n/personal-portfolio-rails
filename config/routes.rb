@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   # Routes for email contact form
   resources :contacts, only: %i[new create]
+
+  # Route for downloading CV
+  get '/download', to: 'portfolios#download'
 end
