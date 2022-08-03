@@ -7,6 +7,10 @@
         <p>Let's connect!</p>
       </div>
 
+      <% flash.each do |key, message| %>
+        <p class="alert alert-<%= key %>"><%= message %></p>
+      <% end %>
+
       <%= render 'contact_form', contact: @contact %>
       
     </div>
