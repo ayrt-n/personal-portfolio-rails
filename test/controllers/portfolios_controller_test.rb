@@ -1,6 +1,6 @@
 require "test_helper"
 
-class PortfolioControllerTest < ActionDispatch::IntegrationTest
+class PortfoliosControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
