@@ -13,6 +13,5 @@
  *=require reset.css
  *=require styles.css
  *= require_tree .
- *=require tablet_styles.css
- *=require desktop_styles.css
+ *=require media_queries.css
  */
