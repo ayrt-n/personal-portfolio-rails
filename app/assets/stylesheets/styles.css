@@ -515,8 +515,8 @@ input, textarea {
 }
 
 .input:focus, .textarea:focus {
-  border-color: #485fc7;
-  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 0.125em rgba(76, 29, 149, 0.25);
 }
 
 /* Footer styling */
