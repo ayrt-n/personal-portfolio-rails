@@ -1,8 +1,8 @@
 <!-- Navbar -->
-<nav class="navbar">
+<nav class="navbar" role="navigation" aria-label="main navigation" data-controller="navbar">
   <div class="navbar-brand">
     <a href="#" class="text-logo navbar-item">AP</a>
-    <div class="navbar-item burger" onclick="toggleMenu()" id="burger">
+    <div class="navbar-item burger" aria-label="menu" aria-expanded="false" data-navbar-target="burger" data-action="click->navbar#toggle">
       <div class="navbar-burger">
         <span class="line line1"></span>
         <span class="line line2"></span>
@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="navbar-menu" id="menu">
+  <div class="navbar-menu" data-navbar-target="menu">
     <a href="#" class="navbar-item">Home</a>
     <a href="#about" class="navbar-item">About</a>
     <a href="#skills" class="navbar-item">Technical Skills</a>
