@@ -148,10 +148,13 @@
 
   <div class="work-grid-container">
     <div class="card white">
-      <div class="slideshow-container">
-        <%= image_tag("social_media_prev1.png", alt: "Screenshot of social media app", class: "work-image") %>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+      <div class="slideshow-container" data-controller="slideshow">
+        <%= image_tag("social_media_prev1.png", alt: "Screenshot of social media app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("social_media_prev2.png", alt: "Screenshot of social media app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("social_media_prev3.png", alt: "Screenshot of social media app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        
+        <a class="prev" data-action="slideshow#prev">&#10094;</a>
+        <a class="next" data-action="slideshow#next">&#10095;</a>
       </div>
       <div class="work-description">
         <p>
@@ -178,7 +181,14 @@
     </div>
 
     <div class="card white">
-      <%= image_tag("inventory_tracker_prev1.png", alt: "Screenshot of inventory tracking app", class: "work-image") %>
+      <div class="slideshow-container" data-controller="slideshow">
+        <%= image_tag("inventory_tracker_prev1.png", alt: "Screenshot of inventory tracking app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("inventory_tracker_prev2.png", alt: "Screenshot of inventory tracking app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("inventory_tracker_prev3.png", alt: "Screenshot of inventory tracking app", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+
+        <a class="prev" data-action="slideshow#prev">&#10094;</a>
+        <a class="next" data-action="slideshow#next">&#10095;</a>
+      </div>
       <div class="work-description">
         <p>
           <div class="work-header">
@@ -204,7 +214,14 @@
     </div>
 
     <div class="card white">
-      <%= image_tag("chess_prev1.png", alt: "Screenshot of chess game played through command line", class: "work-image") %>
+      <div class="slideshow-container" data-controller="slideshow">
+        <%= image_tag("chess_prev1.png", alt: "Screenshot of chess game played through command line", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("chess_prev2.png", alt: "Screenshot of chess game played through command line", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+        <%= image_tag("chess_prev3.png", alt: "Screenshot of chess game played through command line", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+
+        <a class="prev" data-action="slideshow#prev">&#10094;</a>
+        <a class="next" data-action="slideshow#next">&#10095;</a>
+      </div>
       <div class="work-description">
         <p>
           <div class="work-header">

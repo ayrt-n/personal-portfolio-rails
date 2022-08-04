@@ -410,6 +410,14 @@ p {
   position: relative;
 }
 
+.slide {
+  display: none;
+}
+
+.slide.slide-current {
+  display: block;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
