@@ -148,7 +148,11 @@
 
   <div class="work-grid-container">
     <div class="card white">
-      <%= image_tag("social_media_prev1.png", alt: "Screenshot of social media app", class: "work-image") %>
+      <div class="slideshow-container">
+        <%= image_tag("social_media_prev1.png", alt: "Screenshot of social media app", class: "work-image") %>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
       <div class="work-description">
         <p>
           <div class="work-header">

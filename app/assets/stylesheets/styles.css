@@ -406,6 +406,40 @@ p {
   justify-content: center;
 }
 
+.slideshow-container {
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.2rem;
+  font-weight: bold;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.25);
+  color: #fff;
+}
+
+.prev:active, .next:active {
+  background-color: rgba(0,0,0,0.45);
+}
+
 .work-image {
   max-height: 375px;
   height: auto;
