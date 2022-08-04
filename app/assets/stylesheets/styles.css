@@ -423,12 +423,14 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 0.2rem;
+  padding: 0.2rem 0.5rem;
   color: rgba(0,0,0,0.35);
   font-weight: bold;
   transition: 0.2s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  font-size: 1.35rem;
+  margin-top: -15px;
 }
 
 .next {
