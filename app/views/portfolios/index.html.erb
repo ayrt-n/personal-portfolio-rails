@@ -219,8 +219,8 @@
         <%= image_tag("chess_prev2.png", alt: "Screenshot of chess game played through command line", class: "work-image slide", data: { slideshow_target: "slide" }) %>
         <%= image_tag("chess_prev3.png", alt: "Screenshot of chess game played through command line", class: "work-image slide", data: { slideshow_target: "slide" }) %>
 
-        <a class="prev" data-action="slideshow#prev">&#10094;</a>
-        <a class="next" data-action="slideshow#next">&#10095;</a>
+        <a class="prev light" data-action="slideshow#prev">&#10094;</a>
+        <a class="next light" data-action="slideshow#next">&#10095;</a>
       </div>
       <div class="work-description">
         <p>
@@ -247,7 +247,13 @@
     </div>
 
       <div class="card white">
-        <%= image_tag("dashboard_prev1.png", alt: "Screenshot of file sharing application dashboard", class: "work-image") %>
+        <div class="slideshow-container" data-controller="slideshow">
+          <%= image_tag("dashboard_prev1.png", alt: "Screenshot of file sharing application dashboard", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+          <%= image_tag("dashboard_prev2.png", alt: "Screenshot of file sharing application dashboard", class: "work-image slide", data: { slideshow_target: "slide" }) %>
+
+          <a class="prev" data-action="slideshow#prev">&#10094;</a>
+          <a class="next" data-action="slideshow#next">&#10095;</a>
+        </div>
         <div class="work-description">
           <p>
             <div class="work-header">
